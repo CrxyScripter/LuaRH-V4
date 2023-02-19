@@ -50,7 +50,7 @@ function Normal:Obfuscate(Option)
   b64table = b64table.."}"
  
   if Option.Method == true then
-    print([===[--[[\n  ]===]..Option.WaterMark..[===[\n]]--]===].."\n".."\n"..Reburi..b.." "..b64table.." "..b64dec.. " "..prescript.." "..onescript)
+    print([===[--[[\n  ]===]..Option.WaterMark..[===[\n]]--]===].."\n".."\n"..Rerubi..b.." "..b64table.." "..b64dec.. " "..prescript.." "..onescript)
   elseif Option.Method == false then
     io.write("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
     io.write("> ғɪʟᴇ ᴏʙғᴜsᴄᴀᴛᴇᴅ ɪɴ ⏳["..os.clock().."] sᴇᴄᴏɴᴅs")

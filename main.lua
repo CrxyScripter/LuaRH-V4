@@ -49,22 +49,6 @@ io.write("\n━━━━━━━━━━━━━━━━━━━━━━�
 io.write("> sᴇᴛ ғɪʟᴇ ᴛᴏ ᴏʙғᴜsᴄᴀᴛᴇ ["..UploadFile.."]")
 io.write("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n")
 
-if SimpleLevel == true then
-  local onlynumber = io.read()
-  local Amount = tonumber(onlynumber)
-  if Amount == nil then
-    YourBytes = "112145"
-    io.write("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
-    io.write("> ɪɴᴠᴀʟɪᴅ ʙʏᴛᴇs, ᴀᴜᴛᴏᴍᴀᴛɪᴄ sᴇᴛ ᴛᴏ [112145]")
-    io.write("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n")
-  else
-    YourBytes = Amount
-    io.write("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
-    io.write("> sᴇᴛ ʙʏᴛᴇs ᴛᴏ ["..Amount.."]")
-    io.write("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n")
-  end
-end
-
 local File_To_Obf = io.open(UploadFile)
 local YourFile = File_To_Obf:read'*a'
 File_To_Obf:close()
@@ -72,7 +56,7 @@ File_To_Obf:close()
 if SimpleLevel == true then
   SimpleEncrypt:Obfuscate({
   	Script = YourFile,
-      Bytes = YourBytes,
+      Bytes = "112145116",
       WaterMark = "Encrypted with LuaRH",
       Method = false
   })

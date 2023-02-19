@@ -20,10 +20,6 @@ RerFile:close()
 -->-------------------------------<--
 
 -->-------------------------------<--
-local StLetter = [===[function IllIlIlIlllllIlIlIll(e,...)e=x("]===]..Letter:Generate(string.len(Script) + 600)..[===[");end;]===] 
--->-------------------------------<--
-
--->-------------------------------<--
 local ByteResult = [===[local IlIlIlIIIIIlllIlIll="";local IllIlIlIlIlIlIlIlIlIlIlIlIl="\12211188";local IllIlIlIlIlIlIlIlIlIl=load;local IllIlIlIlIllIllIlIlIl="]===]..String:AddByte(Script)..[===[";local IllIlIlIlIllIllIlIIIl=function(e)return IllIlIlIlIlIlIlIlIlIl(e)end;IllIlIlIlIllIlIIIll = IllIlIlIlIllIllIlIlIl:gsub(IllIlIlIlIlIlIlIlIlIlIlIlIl, IlIlIlIIIIIlllIlIll);IllIlIlIlIllIllIlIIIl(IllIlIlIlIllIlIIIll)()]===]
 -->-------------------------------<--
 

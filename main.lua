@@ -1,4 +1,4 @@
-local SimpleEncrypt = require("level/simple")
+local SimpleEncrypt = require("level/simple-cli")
 local NormalEncrypt = require("level/normal")
 local StrongEncrypt = require("level/strong")
 

@@ -73,7 +73,7 @@ if SimpleLevel == true then
   SimpleEncrypt:Obfuscate({
   	Script = YourFile,
       Bytes = YourBytes,
-      WaterMark = "Encrypted with LuaRH"
+      WaterMark = "Encrypted with LuaRH",
       Method = false
   })
 elseif NormalLevel == true then
@@ -84,7 +84,7 @@ elseif NormalLevel == true then
   })
 elseif StrongLevel == true then
   StrongEncrypt:Obfuscate({
-  	Script = YourFile,
+  	Script = UploadFile,
       WaterMark = "Encrypted with LuaRH",
       VariableName = "LuaRH",
       VariableDesc = "LuaRH Obfuscator",

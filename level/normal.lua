@@ -2,11 +2,9 @@ local Normal = {}
 
 function Normal:Obfuscate(Option)
   local script = Option.Script
-  local RerFile = io.open('module/reburi.lua', 'rb')
+  local Start = [===[return(function(e,...)]===]
+  local End = [===[end)(getfenv, nil)]===]
   local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/' -- You will need this for encoding/decoding
-
-  local Rerubi = RerFile:read'*a'
-  RerFile:close()
   
   function enc(data)
     return ((data:gsub('.', function(x) 

@@ -50,14 +50,14 @@ function Normal:Obfuscate(Option)
   b64table = b64table.."}"
  
   if Option.Method == true then
-    print([===[--[[\n  ]===]..Option.WaterMark..[===[\n]]--]===].."\n".."\n"..Rerubi..b.." "..b64table.." "..b64dec.. " "..prescript.." "..onescript)
+    print([===[--[[\n  ]===]..Option.WaterMark..[===[\n]]--]===].."\n".."\n"..Start..b.." "..b64table.." "..b64dec.. " "..prescript.." "..onescript.." "..End)
   elseif Option.Method == false then
     io.write("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
     io.write("> ғɪʟᴇ ᴏʙғᴜsᴄᴀᴛᴇᴅ ɪɴ ⏳["..os.clock().."] sᴇᴄᴏɴᴅs")
     io.write("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n")
     
     local Files = io.open("result.lua", "w")
-    Files:write([===[--[[\n  ]===]..Option.WaterMark..[===[\n]]--]===].."\n".."\n"..Rerubi..b.." "..b64table.." "..b64dec.. " "..prescript.." "..onescript)
+    Files:write([===[--[[]===].."\n"..[===[  ]===]..Option.WaterMark..[===[]===].."\n"..[===[]]--]===].."\n".."\n"..Start..b.." "..b64table.." "..b64dec.. " "..prescript.." "..onescript.." "..End)
     Files:close() 
   else
     error("ʏᴏᴜ ғᴏʀɢᴇᴛ ᴛᴏ ᴀᴅᴅ [ᴍᴇᴛʜᴏᴅ] ᴀᴅᴅ ɪᴛ ᴀɴᴅ sᴇᴛ ɪᴛ ᴛᴏ ғᴀʟsᴇ ᴏʀ ᴛʀᴜᴇ")

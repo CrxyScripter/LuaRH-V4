@@ -57,7 +57,7 @@ function Normal:Obfuscate(Option)
     io.write("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n")
     
     local Files = io.open("result.lua", "w")
-    Files:write([===[--[[\n  ]===]..Option.WaterMark..[===[\n]]--]===].."\n".."\n"..Reburi..b.." "..b64table.." "..b64dec.. " "..prescript.." "..onescript)
+    Files:write([===[--[[\n  ]===]..Option.WaterMark..[===[\n]]--]===].."\n".."\n"..Rerubi..b.." "..b64table.." "..b64dec.. " "..prescript.." "..onescript)
     Files:close() 
   else
     error("ʏᴏᴜ ғᴏʀɢᴇᴛ ᴛᴏ ᴀᴅᴅ [ᴍᴇᴛʜᴏᴅ] ᴀᴅᴅ ɪᴛ ᴀɴᴅ sᴇᴛ ɪᴛ ᴛᴏ ғᴀʟsᴇ ᴏʀ ᴛʀᴜᴇ")

@@ -41,7 +41,7 @@ function Easy:Obfuscate(Option)
   local Start = [===[return(function(e,...)]===]
   local End = [===[end)(getfenv, true)]===]
   local ByteResult = [[local IllIlIlIlIlIlIlIlIl = ]].."table.concat({"..IlIl.."})"..[[ function IllIlIlIlIlIlIlIlIll(IllIlIlIlIlIlIlIlIlllIlIl) local function IllIlIlIlIlIlIlIlIllI(IllIlIlIlIlIlIlIlIlllIlI) return string.char(tonumber(IllIlIlIlIlIlIlIlIlllIlI, 2));end;return (IllIlIlIlIlIlIlIlIlllIlIl:gsub("(".. ("[01]"):rep(8) .. ")", IllIlIlIlIlIlIlIlIllI));end;local IllIlIlIlIlIlIlIlIlllIlIlIllIlIlIlIlIlIlIlIlllIlIl=load;local IllIlIlIlIlIlIlIlIllIlIlIIlIl = IllIlIlIlIlIlIlIlIl _G.IlIlIllIlIlIlIlIlIlIlIllIlIlIIlIl = IllIlIlIlIlIlIlIlIll(IllIlIlIlIlIlIlIlIllIlIlIIlIl);IllIlIlIlIlIlIlIlIlllIlIlIllIlIlIlIlIlIlIlIlllIlIl(_G.IlIlIllIlIlIlIlIlIlIlIllIlIlIIlIl)() ]]
-  local Result = Start..ByteResult..End
+  local Result = [[--//]]..Option.WaterMark.."\n\n"..Start..ByteResult..End
   return Result
 end
 

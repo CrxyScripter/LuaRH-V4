@@ -18,6 +18,7 @@
 > [V1.2] Update (Quickly)
 - Fixed `Normal` Watermark
 - Added `Easy` Level Encryption
+  - Runable Soon...
 ```
 
 # Installation

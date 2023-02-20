@@ -16,7 +16,6 @@
 - Added `Small Output`
 
 > [V1.2] Update (Quickly)
-- Customize Variable Names
 - Fixed `Normal` Watermark
 - Added `Easy` Level Encryption
 ```
